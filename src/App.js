@@ -8,10 +8,9 @@ function App() {
   return (
     <div className="App">
       <Router>
-      <Header />
       <Routes>
-        <Route path="/" element={[<TinderCards />, <SwipeButtons/>]} />
-        <Route path="/chats"/>
+        <Route path="/" element={[<Header />, <TinderCards />, <SwipeButtons/>]} />
+        <Route path="/chats" element={[<Header backButton="/"/>]}/>
       </Routes>
     </Router>
     </div>
